@@ -17,7 +17,7 @@ var canCompleteCircuit = function(gas, cost) {
                 pos_start = idx
             }
 
-            if (pos_start === idx + 1) {
+            if (pos_start === ind(len, idx + 1)) {
                 circle_found = true
             }
         } else {
@@ -47,4 +47,3 @@ function ind(len, i) {
         return i % len
     }
 }
-console.log(canCompleteCircuit([2,3,4],[3,4,3]))
